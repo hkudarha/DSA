@@ -57,38 +57,44 @@
 
 
 
-// without using extra space -- pallindrom
-// let string = "madam";
-// let i=0 , j=string.length-1;
-// let is_pallindrom = true;
+// withonut using extra space -- pallindrom
+
+// let s= "aba";
+// let i = 0, j=s.length-1;
+
 // while(i<j){
-//     if(string.charAt(i) !=  string.charAt(j)){
-//          console.log("No Pallindrom");
-         
+//     if(s.charAt(i) != s.charAt(j)){
+//         console.log("not");
 //         break
 //     }
 //     i++;
 //     j--;
 // }
-// console.log("Pallindrom");
+// if (i >= j) {
+//     console.log("palindrome");
+// }
 
 
 
 
 
+
+// //convert uppercase character in small and small into uppercase
 // let s= prompt("Enter a char :")
 // console.log(s);
 
 // let toggle ="";
 // for (let i = 0; i < s.length; i++) {
 //    let ch = s.charCodeAt(i);
+//    //A to Z - 65 to 90
 //     if(ch>=65 && ch<=90){
 //        toggle = toggle +String.fromCharCode(ch + 32) ; 
-//     }else if(ch>=97 && ch<=122){
+//     }
+//     // a to z - 97 to 112 
+//     else if(ch>=97 && ch<=122){
 //         toggle = toggle + String.fromCharCode(ch - 32)
 //     }
 // }
-
 // console.log(toggle);
 
 
@@ -97,18 +103,18 @@
 
 
 // frequency of each CharacterData
-let s = prompt("Enter a Characters");
-let arr = new Array(128).fill(0);
+// let s = prompt("Enter a Characters");
+// let arr = new Array(128).fill(0);
 
-for (let i = 0; i < s.length; i++) {
-    let indx = s.charCodeAt(i);
-    arr[indx] = arr[indx]+1;
+// for (let i = 0; i < s.length; i++) {
+//     let indx = s.charCodeAt(i);
+//     arr[indx] = arr[indx]+1;
 
-}
+// }
 
-for (let i = 0; i < arr.length; i++) {
-    if(arr[i]>0){
-        console.log(String.fromCharCode(i)+" appears at " + arr[i]+ " times");   
-    }
-}
+// for (let i = 0; i < arr.length; i++) {
+//     if(arr[i]>0){
+//         console.log(String.fromCharCode(i)+" appears at " + arr[i]+ " times");   
+//     }
+// }
 
